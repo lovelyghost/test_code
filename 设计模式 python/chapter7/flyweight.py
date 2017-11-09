@@ -4,7 +4,7 @@ import random
 from enum import Enum
 
 TreeType = Enum('TreeType', 'apple_tree cherry_tree peach_tree')
-
+print(TreeType.apptree)
 
 class Tree:
     pool = dict()
@@ -28,6 +28,7 @@ def main():
     tree_counter = 0
 
     for _ in range(10):
+        gg = TreeType.apple_tree
         t1 = Tree(TreeType.apple_tree)
         t1.render(rnd.randint(age_min, age_max),
                   rnd.randint(min_point, max_point),

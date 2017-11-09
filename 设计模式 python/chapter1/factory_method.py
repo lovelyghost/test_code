@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as etree
 import json
 
-
+# 工厂方法
 class JSONConnector:
 
     def __init__(self, filepath):

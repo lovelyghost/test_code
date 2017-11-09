@@ -5,7 +5,7 @@ from abc import ABCMeta, abstractmethod
 
 State = Enum('State', 'new running sleeping restart zombie')
 
-
+# 外观模式
 class User:
     pass
 

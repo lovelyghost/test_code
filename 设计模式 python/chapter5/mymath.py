@@ -2,7 +2,7 @@
 
 import functools
 
-
+# 修饰器模式
 def memoize(fn):
     known = dict()
 

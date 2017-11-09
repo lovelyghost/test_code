@@ -1,6 +1,6 @@
 from external import Synthesizer, Human
 
-
+# 适配器模式
 class Computer:
 
     def __init__(self, name):

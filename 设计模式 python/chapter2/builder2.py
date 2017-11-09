@@ -1,6 +1,6 @@
 # coding: utf-8
 
-
+# 建造者模式
 class Pizza:
 
     def __init__(self, builder):

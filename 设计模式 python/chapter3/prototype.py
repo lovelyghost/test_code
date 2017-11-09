@@ -3,7 +3,7 @@
 import copy
 from collections import OrderedDict
 
-
+# 原型模式
 class Book:
 
     def __init__(self, name, authors, price, **rest):
