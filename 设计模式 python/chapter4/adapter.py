@@ -26,6 +26,7 @@ class Adapter:
 def main():
     objects = [Computer('Asus')]
     synth = Synthesizer('moog')
+    # 给synth的 play 方法. 重新取名字
     objects.append(Adapter(synth, dict(execute=synth.play)))
     human = Human('Bob')
     objects.append(Adapter(human, dict(execute=human.speak)))
