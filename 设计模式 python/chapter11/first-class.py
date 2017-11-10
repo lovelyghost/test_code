@@ -53,7 +53,7 @@ def delete_file(path):
 
 
 def main():
-    orig_name = 'file1'
+    orig_name = 'file2'
     df = delete_file
 
     commands = []
