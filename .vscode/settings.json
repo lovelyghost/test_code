@@ -1,5 +1,5 @@
 {
     "python.pythonPath": "/Users/lx/PycharmProjects/uline_env/test_code_env/bin/python",
-    "python.venvPath": "/Users/lx/PycharmProjects/uline_env/test_code_env/bin/python"
-    
+    "python.venvPath": "/Users/lx/PycharmProjects/uline_env/test_code_env/bin/python",
+    "git.ignoreLimitWarning": true
 }
