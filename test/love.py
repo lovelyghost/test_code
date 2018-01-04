@@ -1,5 +1,6 @@
 
+# -*- coding: utf-8 -*-
 
-for live in ["生","死"]:
-    live.with(you)
-    myhand.have(yourhand).goto(old)
+for live,_,_,_ in [["生","死","ff","rr"]]:
+    print(live)
+    
