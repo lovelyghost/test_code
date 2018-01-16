@@ -13,8 +13,7 @@ channel.exchange_declare(exchange="hello-exchange",
                          type="direct",
                          passive = False,
                          durable = True,
-                         auto_delete=False
-                         )
+                         auto_delete=False)
 
 # 创建文本消息
 msg = sys.argv[1]

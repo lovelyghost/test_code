@@ -111,6 +111,11 @@ print(I)
 print(J)
 print(np.vstack((I,J))) # 垂直入栈
 print(np.hstack((I,J))) # 水平入栈
+print("连接操作")
+print(np.concatenate([I,J],axis=0)) # 行连接
+print(np.concatenate([I,J],axis=1)) # 列连接
+
+
 
 # 数组切分
 K = np.arange(36).reshape((6,6))
