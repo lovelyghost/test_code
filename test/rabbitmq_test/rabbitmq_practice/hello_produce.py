@@ -10,7 +10,7 @@ channel = conn_broker.channel()
 
 # 声明交换器
 channel.exchange_declare(exchange="hello-exchange",
-                         type="direct",
+                         exchange_type="direct",
                          passive = False,
                          durable = True,
                          auto_delete=False)
