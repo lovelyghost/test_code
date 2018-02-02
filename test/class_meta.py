@@ -25,7 +25,6 @@ class Earth(SimpleMetaClass):
 
 if __name__ == "__main__":
     dd = Earth.sayhello()
-    vv =
     # print(d.sayhello())
     # print(d.__metaclass__)
     # print(hasattr(d,"ff"))
