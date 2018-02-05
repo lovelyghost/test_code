@@ -3,9 +3,11 @@
 from concurrent.futures import ProcessPoolExecutor
 import requests
 import time
+import multiprocessing
 URLS = ['http://www.163.com', 'https://www.baidu.com/', 'https://github.com/', 'https://www.youtube.com/']
 
 def load_url(url):
+    print(multiprocessing.current_process())
     time.sleep(5)
     print(url)
     print(requests.get(url).status_code)

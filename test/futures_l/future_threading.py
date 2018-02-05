@@ -2,11 +2,13 @@
 
 from concurrent.futures import ThreadPoolExecutor
 import requests
+import threading
 import time
 URLS = ['http://www.163.com', 'https://www.baidu.com/', 'https://github.com/', 'https://www.youtube.com/']
 
 
 def load_url(url):
+    print(threading.current_thread())
     time.sleep(5)
     print(url)
     print(requests.get(url).status_code)
