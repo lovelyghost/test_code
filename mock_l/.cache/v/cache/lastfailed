@@ -1,1 +1,5 @@
-{}
+{
+  "func_test.py::MyTestCase::test_add_and_multiply": true, 
+  "mock_demo1.py::TestCount::test_add1": true, 
+  "mock_demo1.py::TestCount::test_add2": true
+}
