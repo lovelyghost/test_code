@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 #coding=utf-8
 from collections import OrderedDict
-
+import time
+import os
 #通过某个字段将记录分组
 
 # rows = [
@@ -100,18 +101,35 @@ from collections import OrderedDict
 # print(c["c"])
 # c=c.parents
 # print(c["a"])
-import os.path
-k = "/Users/lx"
-print(os.path.abspath(__file__))
-cur_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# import os.path
+# k = "/Users/lx"
+# print(os.path.abspath(__file__))
+# cur_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # dir = os.path.abspath(__file__)
-print(cur_dir)
+# print(cur_dir)
 # dir.replace(k,"")
 # print(dir.replace(k,""))
 # print(cur_dir)
 # jj = "wwwwdddd"
 # print(jj.replace("ww","e"))
 
-d = {"1":"w","2":"y","3":"u"}
-print(",".join(d.values()))
-print([d[i] for i in ["1","2"]])
+# d = {"1":"w","2":"y","3":"u"}
+# print(",".join(d.values()))
+# print([d[i] for i in ["1","2"]])
+import shutil
+des_file = "/Users/lx/Desktop/merchant_bill/2018/3/"
+temp_path_ = "/Users/lx/Desktop/bill_bill"
+temp_path = os.path.join(temp_path_, str(1000))
+print(temp_path)
+if not os.path.exists(temp_path):
+    os.mkdir(temp_path)
+dd = time.time()
+for j in range(4,6):
+        ff = os.listdir(des_file+str(j))
+        hh = [os.path.join(des_file,str(j),k) for k in ff]
+        for i in hh:
+
+            shutil.copy(i, temp_path)
+# shutil.rmtree(des_file)
+print(time.time()-dd)
+# os.mkdir(des_file)
