@@ -1,6 +1,6 @@
 {
-    "python.pythonPath": "/Users/lx/PycharmProjects/uline_env/test_code_env/bin/python2.7",
-    "python.venvPath": "/Users/lx/PycharmProjects/uline_env/test_code_env/bin/python2.7",
+    "python.pythonPath": "/home/ghost/test_env/test/bin/python",
+    "python.venvPath": "/home/ghost/test_env/test/bin/python",
     "git.ignoreLimitWarning": true,
     "python.linting.pylintEnabled": true,
     "python.unitTest.unittestArgs": [
