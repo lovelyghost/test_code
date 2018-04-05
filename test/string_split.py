@@ -19,19 +19,19 @@ print(zip(my_array[0],my_array[1],my_array[2]))
 a = [-1,3,2,-5,6]
 
 
-print(sorted(a,key= lambda x: abs(x),reverse=True))
-print(sorted(a,key= lambda x: (-1*x),reverse=True))
+print(sorted(a,key= lambda x: (x<0,abs(x))))
 
-print(sorted(a,key= lambda x: x/10 if x > 0 else abs(x)))
 
 
 def foo(fun):
     def real_fool(*arg,**warg):
         g = fun(*arg,**warg)
-        print()
-        h = next(g)
-        print(h)
-        return g
+
+        m_list = [i for i in g]
+        final_ = [m_list[ll:(ll + 4)] for ll in range(0,len(m_list),4)]
+       
+        
+        return final_
     return real_fool
 
 @foo
