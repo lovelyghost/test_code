@@ -3,7 +3,7 @@
 
 from itertools import *
 
-for i in count(start=2,step=2):
+for i in count(start=2, step=2):
     print(i)
 #
 # print ('Stop at 5:')

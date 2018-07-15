@@ -113,23 +113,23 @@ import os
 # jj = "wwwwdddd"
 # print(jj.replace("ww","e"))
 
-# d = {"1":"w","2":"y","3":"u"}
-# print(",".join(d.values()))
-# print([d[i] for i in ["1","2"]])
-import shutil
-des_file = "/Users/lx/Desktop/merchant_bill/2018/3/"
-temp_path_ = "/Users/lx/Desktop/bill_bill"
-temp_path = os.path.join(temp_path_, str(1000))
-print(temp_path)
-if not os.path.exists(temp_path):
-    os.mkdir(temp_path)
-dd = time.time()
-for j in range(4,6):
-        ff = os.listdir(des_file+str(j))
-        hh = [os.path.join(des_file,str(j),k) for k in ff]
-        for i in hh:
+d = {"1":"w","2":"y","3":"u"}
+print(",".join(d.values()))
+print([d[i] for i in ["1","2"]])
+# import shutil
+# des_file = "/Users/lx/Desktop/merchant_bill/2018/3/"
+# temp_path_ = "/Users/lx/Desktop/bill_bill"
+# temp_path = os.path.join(temp_path_, str(1000))
+# print(temp_path)
+# if not os.path.exists(temp_path):
+#     os.mkdir(temp_path)
+# dd = time.time()
+# for j in range(4,6):
+#         ff = os.listdir(des_file+str(j))
+#         hh = [os.path.join(des_file,str(j),k) for k in ff]
+#         for i in hh:
 
-            shutil.copy(i, temp_path)
-# shutil.rmtree(des_file)
-print(time.time()-dd)
+#             shutil.copy(i, temp_path)
+# # shutil.rmtree(des_file)
+# print(time.time()-dd)
 # os.mkdir(des_file)

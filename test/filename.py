@@ -1,13 +1,13 @@
 # # -*- coding:utf-8 -*-
 
 import os
-#获取路径
+# 获取路径
 print os.path.dirname('/Users/lx/Downloads/requirements.txt')
-#分割文件名
+# 分割文件名
 print os.path.basename('/Users/lx/Downloads/requirements.txt')
-#分割文件的后缀
+# 分割文件的后缀
 print os.path.split('/Users/lx/Downloads/requirements.txt')
-#创建目录
+# 创建目录
 if not os.path.exists('/Users/lx/Downloads/happyday'):
     os.mkdir('/Users/lx/Downloads/happyday')
 
